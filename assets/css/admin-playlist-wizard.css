@@ -1,0 +1,470 @@
+#modal-playlist-wizard-background {
+    background: rgba(0,0,0,.5);
+    z-index: 100009;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#modal-playlist-wizard-container {
+
+}
+
+.ui-datepicker-next {
+    float: right;
+}
+
+#ui-datepicker-div {
+    padding: 15px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#modal-playlist-wizard {
+    background: #fff;
+    z-index: 100010;
+    width: 480px;
+    width: 60%;
+    max-width: 900px;
+    min-width: 480px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    left: 20%;
+    margin-left: -240px;
+    margin-left: 0;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#playlist_wizard_file_button {
+    background: #007cba;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+#playlist_wizard_upload_selected {
+    padding: 15px 0 0 0;
+    display: block;
+}
+
+.playlist-step {
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.playlist-step p {
+    color: #888;
+}
+
+.playlist-step h1 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.playlist-step:last-child {
+    border-bottom: 0;
+}
+
+.playlist-step-2 select {
+    width: 100%;
+    height: 250px !important;
+}
+
+#modal-playlist-save {
+    text-align: right;
+    background: #efefef;
+    border-top: 1px solid #ccc;
+}
+
+#modal-playlist-close {
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+    background: #efefef;
+}
+
+#modal-playlist-close p {
+    float: left;
+    font-size: 22px!important;
+    padding-left: 25px;
+    color: #888;
+}
+
+#modal-playlist-close button {
+    background: #efefef;
+    border-radius: 10px;
+    padding: 0 15px;
+    border: 0;
+    color: #555;
+    cursor: pointer;
+    margin: 15px;
+}
+#modal-playlist-close button,
+.wp-adminify #modal-playlist-close button
+{font-size: 30px;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+
+        padding: 0px 0px 4px;
+    width: 30px;
+    height: 30px!important;
+    line-height: 23px!important;
+
+    text-align: center;
+    transition: 0.5s;
+    border: 1px solid #FFF;
+}
+#modal-playlist-close button:hover{    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    border: 1px solid #fff;transition: 0.5s}
+
+#modal-playlist-save button {
+    background: green;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+#playlist-add-time-row {
+    background: #007cba;
+    border-radius: 10px;
+    border: 1px solid #007cba;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px auto 15px auto;
+    display: block;
+}
+
+.playlist-time-row {
+    border: 1px solid #efefef;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+.playlist-time-row h2 {
+    font-size: 15px;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#playlist-add-timeline-row {
+    background: #efefef;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    color: #555;
+    cursor: pointer;
+    margin: 15px auto 15px auto;
+    display: block;
+}
+
+.clear-after:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#playlist-wizard-saved {
+    padding: 25px;
+}
+
+.playlist-timeline-row {
+    background: #efefef;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.playlist-delete-row {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background: #fff;
+    border-radius: 50%;
+    color: red;
+    padding: 0;
+    font-size: 22px;
+    height: 30px;
+    width: 30px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+.playlist-error-msg {
+    position: absolute;
+    right: -145px;
+    right: 25px;
+    width: 150px;
+    border: 1px solid red;
+    color: red;
+    padding: 10px;
+    top: 22px;
+    background: #fae3e8;
+    font-size: 13px;
+}
+
+.playlist-error-msg .arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid red;
+    position: absolute;
+    top: 5px;
+    left: 24px;
+}
+
+.playlist-time-row h2 .playlist-error-msg {
+    font-weight: normal;
+    top: 43px;
+    right: -187px;
+}
+
+.playlist-time-row > .playlist-error-msg {
+    top: 34px;
+    right: -173px;
+}
+
+/* New Styles */
+.#modal-playlist-wizard-container > input {
+clear:both
+}
+
+.playlist-step h2 {
+margin-top:0
+}
+
+.playlist-step .devsm-label {
+width:30%;
+display:inline-block
+}
+
+.playlist-step.playlist-step-0.half-column {
+border-right:1px solid #ccc
+}
+
+.playlist-step.playlist-step-0,.playlist-step.playlist-step-2 {
+clear:left
+}
+
+.playlist-step .controller-container-vertical .devsm-label {
+width:100%;
+display:block
+}
+
+.playlist-step-2 select {
+height:160px!important
+}
+
+.playlist-step input[type=text] {
+width:70%;
+display:inline-block
+}
+
+.playlist-step .controller-container-vertical input {
+width:100%;
+display:block
+}
+
+.wizard-spacer {
+margin-bottom:10px;
+clear:both
+}
+
+.controller-container {
+display:flex;
+flex-direction:row;
+width:100%;
+margin-bottom:10px;
+align-items:center
+}
+
+.controller-container-vertical {
+display:flex;
+flex-direction:column;
+width:100%;
+margin-bottom:10px;
+align-items:center
+}
+
+.controller-container-vertical select {
+width:100%
+}
+
+.controller-container-vertical.half-column {
+width:50%;
+float:left;
+margin-bottom:0
+}
+
+.controller-container-vertical.half-column.left {
+padding-right:5px
+}
+
+.controller-container-vertical.half-column.right {
+padding-left:5px
+}
+
+.playlist-step {
+border-color:#b61f35
+}
+
+.playlist-step.half-column {
+padding:25px;
+float:left;
+padding:25px;
+width:50%;
+border-bottom:none
+}
+
+.playlist-step:not(.half-column) {
+clear:both
+}
+
+.playlist-step.playlist-step-2 {
+border-right:1px solid #ccc
+}
+
+.playlist-step.playlist-step-4 {
+border-top:1px solid #ccc
+}
+
+.ready-only-custom {
+pointer-events:none
+}
+
+#modal-playlist-close {
+background:#b61f35;
+border-bottom:none
+}
+
+#playlist_wizard_file_button,#playlist-add-timeline-row,#playlist-add-time-row {
+background:#b61f35;
+color:#fff;
+font-size:15px;
+min-width:160px;
+padding:12px 15px;
+border-color:#b61f35;
+border-radius:10px;
+line-height:inherit!important;transition: 0.5s
+}
+#playlist_wizard_file_button:hover,
+#playlist-add-timeline-row:hover,
+#playlist-add-time-row:hover{
+transition: 0.5s;
+background: rgba(182, 31, 53, 0.8);
+cursor: pointer;
+}
+
+#modal-playlist-close button {
+color:#b61f35
+}
+
+#modal-playlist-save button {
+line-height:inherit!important;
+min-width:160px;
+padding:12px 15px;
+font-size:15px;
+font-weight:700;
+transition: 0.5s;
+}
+#modal-playlist-save button:hover{transition: 0.5s;background:rgba(0, 128, 0, 0.8)}
+
+.wp-adminify #modal-playlist-wizard #modal-playlist-close p {
+color:#fff
+}
+
+.playlist-step .controller-container-vertical input,.playlist-step input[type=text] {
+font-size:15px;
+padding:16px;
+    line-height: 1;
+}
+.playlist-step input[type=text] {
+    background-color: #efefef;;
+    border: none;
+}
+
+.playlist-timeline-row select[multiple]{    padding: 0;
+    min-height: 124px;
+    overflow-y: auto;}
+.playlist-timeline-row select[multiple] option{padding-left: 10px}
+.wp-adminify #playlist-add-time-row {
+font-size:15px
+}
+
+.playlist-time-fields-row {
+margin-bottom:10px;
+margin-left:-10px;
+margin-right:-10px;
+display:inline-block;
+width:calc(100% + 20px)
+}
+
+.playlist-time-fields-row > .playlist-time-col-3 {
+width:calc(100% / 3);
+padding:0 10px;
+float:left
+}
+
+.playlist-time-fields-row > .playlist-time-col-3 input[type=text] {
+width:100%
+}
+
+.playlist-timeline-row .half-column {
+float:left;
+width:50%;
+}
+
+.playlist-step.playlist-step-0 .controller-container-vertical {
+    position: relative;
+}
+
+.admin_playlist_wizard__option {
+    padding: 0.7em 1em;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #efefef;
+    cursor: pointer;
+    background: #fff;
+}
+
+.admin_playlist_wizard__option:hover {
+    background: #ccc;
+}
+
+.admin_playlist_wizard__select {
+    position: absolute;
+    left: 0;
+    top: 49px;
+    width: 100%;
+    max-width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #fff;
+    border: 1px solid #efefef;
+    z-index: 2;
+    max-height: 118px;
+    overflow: auto;
+}

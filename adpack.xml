@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="3.0">
+    <Ad id="Ad">
+        <InLine>
+            <AdSystem>OpenX</AdSystem>
+            <AdTitle><![CDATA[Ad]]></AdTitle>
+            <Description><![CDATA[Inline Video Ad]]></Description>
+            <Impression id="thirdc385b1">
+                <![CDATA[https://de3.splicky.com/imp?aid=406546&mid=2449363543208719019&pid=30&c=2.8&cc=2&bt=1603702109617]]></Impression>
+            <Impression id="third169b60">
+                <![CDATA[https://media.oadts.com/www/delivery/le.php?type=saw&rqid=105b4211b09ec61c1de7b2aa9c230166&trk=i&cp=ix3_10_qiswgt_5a1_581d&cb=784780311]]></Impression>
+            <Creatives>
+                <Creative sequence="1" AdID="">
+                    <Linear>
+                        <Duration>00:00:10</Duration>
+                        <TrackingEvents>
+                            <Tracking event="start">
+                                <![CDATA[https://de3.splicky.com/vevent?mid=2449363543208719019&event=1]]></Tracking>
+
+                            <Tracking event="firstQuartile">
+                                <![CDATA[https://de3.splicky.com/vevent?mid=2449363543208719019&event=2]]></Tracking>
+
+                            <Tracking event="midpoint">
+                                <![CDATA[https://de3.splicky.com/vevent?mid=2449363543208719019&event=4]]></Tracking>
+
+                            <Tracking event="thirdQuartile">
+                                <![CDATA[https://de3.splicky.com/vevent?mid=2449363543208719019&event=8]]></Tracking>
+
+                            <Tracking event="complete">
+                                <![CDATA[https://de3.splicky.com/vevent?mid=2449363543208719019&event=16]]></Tracking>
+
+                            <Tracking event="start">
+                                <![CDATA[https://media.oadts.com/www/delivery/le.php?type=saw&rqid=105b4211b09ec61c1de7b2aa9c230166&trk=s&cb=784780311]]></Tracking>
+
+                            <Tracking event="firstQuartile">
+                                <![CDATA[https://media.oadts.com/www/delivery/le.php?type=saw&rqid=105b4211b09ec61c1de7b2aa9c230166&trk=f&cb=784780311]]></Tracking>
+
+                            <Tracking event="midpoint">
+                                <![CDATA[https://media.oadts.com/www/delivery/le.php?type=saw&rqid=105b4211b09ec61c1de7b2aa9c230166&trk=m&cb=784780311]]></Tracking>
+
+                            <Tracking event="thirdQuartile">
+                                <![CDATA[https://media.oadts.com/www/delivery/le.php?type=saw&rqid=105b4211b09ec61c1de7b2aa9c230166&trk=t&cb=784780311]]></Tracking>
+
+                            <Tracking event="complete">
+                                <![CDATA[https://media.oadts.com/www/delivery/le.php?type=saw&rqid=105b4211b09ec61c1de7b2aa9c230166&trk=c&cb=784780311]]></Tracking>
+
+
+                        </TrackingEvents>
+                        <MediaFiles>
+                            <MediaFile type="video/mp4" width="1080" height="1920" delivery="progressive"
+                                       scalable="true">
+                                <![CDATA[https://visualart.wavecdn.net/99//ef45db-9958.mp4]]></MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>
